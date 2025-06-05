@@ -2,15 +2,10 @@ header {
   padding-block: 32px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font: var(--text-md);
 }
 
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- 
-}
 
 #profile {
   display: flex;
