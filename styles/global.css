@@ -72,4 +72,8 @@ a:hover {
   flex-direction: column;
 }
 
+footer {
+  font: var(--text-md);
+}
+
 
