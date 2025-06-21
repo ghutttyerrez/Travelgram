@@ -26,8 +26,8 @@
               alt="imagem da lupa"
             />
           </li>
-          <li><a href="#">Explorar</a></li>
-          <li><a href="#">Minhas Viagens</a></li>
+          <li class="desktop-only"><a href="#">Explorar</a></li>
+          <li class="desktop-only"><a href="#">Minhas Viagens</a></li>
           <li>
             <img
               src="./assets/Profile pic.png"
@@ -39,8 +39,8 @@
 
       <header class="container">
         <div id="profile">
-          <img src="./assets/Profile pic.png" alt="Imagem de Isabela Torres" />
-          <div>
+          <img src="./assets/Profile pic.png"  alt="Imagem de Isabela Torres" />
+          <div class="flex flex-col">
             <h1>Isabela Torres</h1>
             <p>
               Amante de viagens, cultura e gastronomia. 🌍✈️ <br />
@@ -51,7 +51,8 @@
           </div>
         </div>
 
-        <ul id="info">
+        <div id="info">
+        <ul >
           <li>
             <img src="./assets/icons/MapPin.svg" alt="icone do mapa" />
             <span>São Paulo, Brazil</span>
@@ -68,6 +69,8 @@
             <span>240 fotos</span>
           </li>
         </ul>
+        </div>
+        
       </header>
     </div>
 
@@ -86,8 +89,8 @@
       <img src="./assets/images/Image 12.png" alt="...." />
     </main>
 
-    <footer class="container">
-      <span>Travelgram © 2024 </span>
+    <footer class="container">      
+      <div class="travelgram">Travelgram © 2024 </div>
       <span>Termos de uso</span>
       <span>Política de privacidade</span>
     </footer>

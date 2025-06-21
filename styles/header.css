@@ -4,6 +4,41 @@ header {
   justify-content: space-between;
   align-items: center;
   font: var(--text-md);
+
+  @media (width <= 360px) {
+    display: flex;
+    flex-direction: column;
+
+    
+    & #profile {
+      flex-direction: column;
+      gap: 16px;
+      padding-inline: 32px;
+    }
+
+    & #profile img {
+      width: 120px;
+      height: 120px;
+    }
+
+    & #profile h1 {
+      font-size: 24px;
+    }
+
+    & #profile p {
+      text-align: justify-all;
+      font: var(--text-md);
+      margin-bottom: 32px;
+    }
+
+    & #info {
+      padding-inline: 32px;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
 }
 
 

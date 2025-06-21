@@ -3,13 +3,25 @@ main {
   flex-wrap: wrap;
   padding: 24px;
   gap: 24px; 
- 
-}
 
-main img {
+  & img {
   width: 286px;
   height: 286px;
   object-fit: cover;
   
-  
 }
+
+@media (width <= 360px) {
+
+  &.container {
+  gap: 16px;
+  }
+
+  & img {
+    width: 328px;
+    height: 328px;
+  }
+}
+ 
+}
+
