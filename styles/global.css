@@ -48,9 +48,9 @@ a:hover {
   max-width: 1280px;
 
 
-  @media (width <= 360px) {
+  @media (width <= 768px) {
     padding: 16px;
-    margin-inline: auto;
+    margin-inline: 16px;
   
   }
 
@@ -59,7 +59,7 @@ a:hover {
 .desktop-only {
   display: initial;
 
-  @media (width <= 360px) {
+  @media (width <= 768px) {
     display: none;
   }
 }

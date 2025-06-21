@@ -5,11 +5,10 @@ header {
   align-items: center;
   font: var(--text-md);
 
-  @media (width <= 360px) {
+  @media (width <= 768px) {
     display: flex;
     flex-direction: column;
 
-    
     & #profile {
       flex-direction: column;
       gap: 16px;
@@ -34,18 +33,15 @@ header {
     & #info {
       padding-inline: 32px;
       width: 100%;
-      flex-direction: row;
-      flex-wrap: wrap;
+
       gap: 16px;
     }
   }
 }
 
-
 #profile {
   display: flex;
   gap: 32px;
-  
 }
 
 #profile img {
@@ -57,7 +53,6 @@ header {
 
 #profile > div {
   max-width: 384px;
-  
 }
 
 #profile h1 {
@@ -65,7 +60,6 @@ header {
   font: var(--text-lg);
   margin-bottom: 8px;
 }
-
 
 #info {
   list-style: none;
@@ -77,11 +71,9 @@ header {
   width: 280px;
 }
 
-#info li{
+#info li {
   display: flex;
   align-items: center;
-  
+
   gap: 8px;
-  
- 
 }

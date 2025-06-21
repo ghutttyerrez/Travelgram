@@ -2,26 +2,22 @@ main {
   display: flex;
   flex-wrap: wrap;
   padding: 24px;
-  gap: 24px; 
+  gap: 24px;
 
   & img {
-  width: 286px;
-  height: 286px;
-  object-fit: cover;
-  
-}
-
-@media (width <= 360px) {
-
-  &.container {
-  gap: 16px;
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
   }
 
-  & img {
-    width: 328px;
-    height: 328px;
+  @media (width <= 768px) {
+    &.container {
+      gap: 16px;
+    }
+
+    & img {
+      width: 328px;
+      height: 328px;
+    }
   }
 }
- 
-}
-
