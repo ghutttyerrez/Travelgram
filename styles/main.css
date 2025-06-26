@@ -1,23 +1,23 @@
-main {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 24px;
-  gap: 24px;
+main .container {
+  background-color: var(--background-color);
 
   & img {
-    width: 286px;
-    height: 286px;
     object-fit: cover;
+    aspect-ratio: 1;
+    height: 21rem;
+    width: 100%;
   }
+}
 
-  @media (width <= 768px) {
-    &.container {
-      gap: 16px;
-    }
+@media (width >= 80em) {
+  & main .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
 
     & img {
-      width: 328px;
-      height: 328px;
+      height: 17.875rem;
+      width: 100%;
     }
   }
 }

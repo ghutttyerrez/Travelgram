@@ -14,63 +14,39 @@
   --text-color-secondary: #6C6C6C;
 
   --font-family: "Poppins", sans-serif;
-  --text: 16px/150% var(--font-family);
-  --text-lg: bold 32px/125% var(--font-family);
-  --text-md: 14px/170% var(--font-family);
-  --text-sm: 12px/170% var(--font-family);
+  --text-lg: bold 1.5rem/1.25 var(--font-family);
+  --text-md: 400 .875rem/1.7 var(--font-family);
+  --text-sm: 400 .75rem/1.7 var(--font-family);
+   --text: 400 1rem/1.5 var(--font-family);
 
-  --px-lg: 16px;
+  --px-1: 1rem;
+  --px-2: 2rem;
 }
 
 body {
+font-family: var(--font-family);
+color: var(--text-color-secondary);
+font: (var(--text-md))
 
-  --text: var(--font-family);
-  --text-color-secondary: var(--text-color-secondary);
-  --background-color: var(--background-color);
+}
 
-  
+#navhe {
+  background-color: var(--surface-color);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font: var(--text)
 }
 
-a:hover {
-  color: var(--brand-color);
-  text-decoration: underline;
+ul[role="list"] {
+  list-style: none;
 }
 
 
-.container {
-  padding-inline: 32px;
-  margin-inline: auto;
-  max-width: 1280px;
 
 
-  @media (width <= 768px) {
-    padding: 16px;
-    margin-inline: 16px;
-  
-  }
-
-}
-
-.desktop-only {
-  display: initial;
-
-  @media (width <= 768px) {
-    display: none;
-  }
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
 
 footer {
   font: var(--text-md);
