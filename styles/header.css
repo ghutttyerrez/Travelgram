@@ -1,6 +1,6 @@
 header {
-  & div {
-    &.profile {
+  & > div {
+    & .profile {
       & img {
         aspect-ratio: 1;
         display: inline-block;

@@ -4,7 +4,7 @@ nav {
   & div {
     width: 5rem;
     justify-content: end;
-    background: url(../assets/icons/MagnifyingGlass.svg) no-repeat left;
+    background: url(../assets/MagnifyingGlass.svg) no-repeat left;
   }
   & #lt-prf {
     width: 2.5rem;
@@ -29,7 +29,7 @@ nav {
     background-position-y: center;
 
     &:hover {
-      background-image: url(../assets/icons/MagnifyingGlass.svg);
+      background-image: url(../assets/MagnifyingGlass-hover.svg);
     }
   }
   nav {
